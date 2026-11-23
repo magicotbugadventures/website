@@ -7,61 +7,71 @@
   <meta name="description" content="This page could not be found.">
   <meta name="robots" content="noindex">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#FBF8F4">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Magic OT Bug">
+  <meta property="og:title" content="Page not found — The Magic OT Bug">
+  <meta property="og:description" content="This page could not be found.">
+  <meta property="og:image" content="https://magicotbugadventures.com/images/og-image.jpg">
   <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="brand-bar" aria-hidden="true"></div>
   <header class="site-header">
-    <div class="wrap">
-      <a class="site-logo" href="/">
-        <picture>
-          <source srcset="/images/logo.webp" type="image/webp">
-          <img src="/images/logo.png" alt="The Magic OT Bug — home" width="157" height="48">
-        </picture>
+    <div class="wrap header-row">
+      <a class="brand" href="/">
+        <img src="/images/logo-320.webp" srcset="/images/logo-320.webp 320w, /images/logo-640.webp 640w" sizes="9.5rem"
+             width="320" height="98" alt="The Magic OT Bug — home">
       </a>
       <nav class="site-nav" aria-label="Site">
         <ul>
+          <li><a href="/support">Support</a></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/terms">Terms</a></li>
-          <li><a href="/support">Support</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main id="main" class="wrap">
-    <header class="page-head">
-      <p class="eyebrow">Oops!</p>
+  <main id="main">
+    <div class="wrap lost">
+      <img src="/images/ladybug-160.webp" srcset="/images/ladybug-160.webp 160w, /images/ladybug-320.webp 320w" sizes="7rem"
+           width="160" height="184" alt="">
+      <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Oops!</p>
       <h1>Page not found</h1>
       <p class="meta">That page has wandered off. Try one of these instead:</p>
-    </header>
-    <ul class="cards">
-      <li><a href="/privacy"><span class="card-title">Privacy Policy</span></a></li>
-      <li><a href="/terms"><span class="card-title">Terms of Use</span></a></li>
-      <li><a href="/support"><span class="card-title">Support</span></a></li>
-    </ul>
+      <ul class="lost-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/support">Support</a></li>
+        <li><a href="/privacy">Privacy Policy</a></li>
+        <li><a href="/terms">Terms of Use</a></li>
+      </ul>
+    </div>
   </main>
   <footer class="site-footer">
-    <div class="wrap">
+    <div class="wrap footer-grid">
       <div class="footer-brand">
-        <img src="/images/app-icon.webp" alt="" width="48" height="48">
-        <div>
-          <strong>Magic OT Bug Adventures LLC</strong>
-          <p>139 Dudley Drive, Bergenfield, NJ 07621, United States</p>
-          <p><a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a></p>
-        </div>
+        <p class="footer-name">Magic OT Bug Adventures LLC</p>
+        <p>Made with care by Sara &amp; Rebecca, pediatric OTs.</p>
       </div>
-      <div>
-        <ul class="footer-links">
+      <address class="footer-contact">
+        <span>139 Dudley Drive, Bergenfield, NJ 07621, United States</span>
+        <span>Phone: <a href="tel:+12013177937">(201) 317-7937</a></span>
+        <span><a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a></span>
+      </address>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="/support">Support</a></li>
           <li><a href="/privacy">Privacy Policy</a></li>
           <li><a href="/terms">Terms of Use</a></li>
-          <li><a href="/support">Support</a></li>
         </ul>
-        <p>&copy; 2026 Magic OT Bug Adventures LLC</p>
-      </div>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; 2026 Magic OT Bug Adventures LLC</p>
+      <p>The Magic OT Bug for iPad is coming soon to the App Store.</p>
     </div>
   </footer>
 </body>

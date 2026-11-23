@@ -3,114 +3,256 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Magic OT Bug Adventures LLC — makers of The Magic OT Bug</title>
-  <meta name="description" content="Magic OT Bug Adventures LLC makes The Magic OT Bug, an iPad app of games designed by pediatric occupational therapists. No ads, no tracking, no data collected.">
+  <title>The Magic OT Bug — handwriting and fine motor games by pediatric OTs</title>
+  <meta name="description" content="The Magic OT Bug is an iPad app of handwriting and fine motor games designed by pediatric occupational therapists. No ads, no tracking, no data collected.">
   <meta name="robots" content="index,follow">
   <meta name="color-scheme" content="light">
-  <meta name="theme-color" content="#ffffff">
+  <meta name="theme-color" content="#FBF8F4">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="The Magic OT Bug">
+  <meta property="og:title" content="The Magic OT Bug — handwriting and fine motor games by pediatric OTs">
+  <meta property="og:description" content="The Magic OT Bug is an iPad app of handwriting and fine motor games designed by pediatric occupational therapists. No ads, no tracking, no data collected.">
+  <meta property="og:image" content="https://magicotbugadventures.com/images/og-image.jpg">
   <link rel="icon" type="image/png" sizes="64x64" href="/images/favicon-64.png">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preload" href="/fonts/fredoka-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="/style.css">
 </head>
-<body>
+<body id="top">
   <a class="skip-link" href="#main">Skip to content</a>
-  <div class="brand-bar" aria-hidden="true"></div>
   <header class="site-header">
-    <div class="wrap">
-      <a class="site-logo" href="/">
-        <picture>
-          <source srcset="/images/logo.webp" type="image/webp">
-          <img src="/images/logo.png" alt="The Magic OT Bug — home" width="157" height="48">
-        </picture>
+    <div class="wrap header-row">
+      <a class="brand" href="/">
+        <img src="/images/logo-320.webp" srcset="/images/logo-320.webp 320w, /images/logo-640.webp 640w" sizes="9.5rem"
+             width="320" height="98" alt="The Magic OT Bug — home">
       </a>
       <nav class="site-nav" aria-label="Site">
         <ul>
+          <li><a href="/support">Support</a></li>
           <li><a href="/privacy">Privacy</a></li>
           <li><a href="/terms">Terms</a></li>
-          <li><a href="/support">Support</a></li>
         </ul>
       </nav>
     </div>
   </header>
-  <main id="main" class="wrap">
-    <section class="hero">
-      <h1>
-        <picture>
-          <source srcset="/images/logo.webp" type="image/webp">
-          <img class="hero-logo" src="/images/logo.png" alt="The Magic OT Bug" width="560" height="171">
-        </picture>
-      </h1>
-      <p class="lede">Playful handwriting and fine-motor games for kids, designed by pediatric occupational therapists.</p>
-      <ul class="chips" aria-label="Our promises">
-        <li>No ads</li>
-        <li>No tracking</li>
-        <li>No accounts</li>
-        <li>Made by OTs</li>
-      </ul>
-      <div class="app-card">
-        <img src="/images/app-icon.webp" alt="" width="84" height="84">
-        <div>
-          <p><strong>The Magic OT Bug for iPad</strong>
-          Children trace, pinch, copy, steer and match their way through games that build letter
-          formation, fine motor, visual perception and coordination. Everything a child does stays
-          on the iPad.</p>
-          <a class="button" href="https://apps.apple.com/app/id6813398286">View on the App Store</a>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-text">
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Designed by pediatric occupational therapists</p>
+          <h1 id="hero-title">The skills underneath handwriting, turned into play.</h1>
+          <p class="lede">The Magic OT Bug is an iPad app of handwriting and fine motor games. Children trace,
+          pinch, copy, steer and match their way through colorful games, and every game starts at level 1 and grows
+          with them.</p>
+          <ul class="promise" aria-label="Our promise">
+            <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg>No ads</li>
+            <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg>No tracking</li>
+            <li><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7"/></svg>No data collected</li>
+          </ul>
+          <div class="hero-actions">
+            <a class="button" href="#practice">What children practice</a>
+            <p class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</p>
+          </div>
+        </div>
+        <figure class="hero-arch">
+          <img src="/images/arch-ladybug-700.webp" srcset="/images/arch-ladybug-480.webp 480w, /images/arch-ladybug-700.webp 700w"
+               sizes="(min-width: 60em) 30rem, 80vw" width="700" height="788" fetchpriority="high"
+               alt="The Magic OT Bug ladybug standing on a daisy, a rainbow trailing from her star wand.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section plates-section" aria-label="From the games menu">
+      <div class="wrap">
+        <div class="plates">
+          <figure class="plate">
+            <img src="/images/game-build-a-letter-608.webp" srcset="/images/game-build-a-letter-608.webp 608w, /images/game-build-a-letter-1216.webp 1216w"
+                 sizes="(min-width: 64em) 23rem, (min-width: 40em) 31vw, 92vw" width="608" height="288"
+                 alt="Build &amp; Write menu art: a finger drawing on an easel" loading="lazy">
+            <figcaption><span>Handwriting</span>Build &amp; Write</figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="/images/game-pinch-pop-608.webp" srcset="/images/game-pinch-pop-608.webp 608w, /images/game-pinch-pop-1216.webp 1216w"
+                 sizes="(min-width: 64em) 23rem, (min-width: 40em) 31vw, 92vw" width="608" height="288"
+                 alt="Pinch Pop menu art: a thumb and finger pinching a ladybug" loading="lazy">
+            <figcaption><span>Fine motor</span>Pinch Pop</figcaption>
+          </figure>
+          <figure class="plate">
+            <img src="/images/game-butterfly-wings-608.webp" srcset="/images/game-butterfly-wings-608.webp 608w, /images/game-butterfly-wings-1216.webp 1216w"
+                 sizes="(min-width: 64em) 23rem, (min-width: 40em) 31vw, 92vw" width="608" height="288"
+                 alt="Butterfly Wings menu art: a butterfly with two rainbow wings" loading="lazy">
+            <figcaption><span>Coordination</span>Butterfly Wings</figcaption>
+          </figure>
         </div>
       </div>
     </section>
 
-    <h2 class="section-title">For parents and therapists</h2>
-    <ul class="cards">
-      <li>
-        <a href="/privacy">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v5c0 4.5-3 8.3-7 10-4-1.7-7-5.5-7-10V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          </span>
-          <span class="card-title">Privacy Policy</span>
-          <p>What the app keeps on your iPad, and why we collect nothing.</p>
-        </a>
-      </li>
-      <li>
-        <a href="/terms">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8l-5-5z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h4"/></svg>
-          </span>
-          <span class="card-title">Terms of Use</span>
-          <p>The terms for using the app and its subscriptions.</p>
-        </a>
-      </li>
-      <li>
-        <a href="/support">
-          <span class="card-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12z"/><path d="M9.5 9.5a2.5 2.5 0 1 1 3.3 2.4c-.5.2-.8.6-.8 1.1v.5"/><path d="M12 16.5h.01"/></svg>
-          </span>
-          <span class="card-title">Support</span>
-          <p>Help with purchases, subscriptions and your child&rsquo;s data.</p>
-        </a>
-      </li>
-    </ul>
+    <section class="section" id="practice" aria-labelledby="practice-title">
+      <div class="wrap split">
+        <header class="split-head">
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>What your child practices</p>
+          <h2 id="practice-title">Five skill areas, built by pediatric OTs Sara &amp; Rebecca</h2>
+          <p>Activities designed by pediatric occupational therapists for practicing fine motor, handwriting, visual perception, coordination and following-directions skills.</p>
+        </header>
+        <ol class="skills">
+          <li class="skill">
+            <span class="skill-num" aria-hidden="true">01</span>
+            <div>
+              <h3>Handwriting and letter formation</h3>
+              <ul>
+                <li>Trace each letter in the right stroke order, watch it draw itself, then write it (<b>Build &amp; Write</b>).</li>
+                <li>Color each letter by its size, tall, small or fall, on real writing lines (<b>Color the Word</b>).</li>
+                <li>Fix flipped and wrong-case letters, and hunt for the tricky b, d, p and q (<b>Flip &amp; Fix</b>, <b>Letter and Number Detective</b>).</li>
+              </ul>
+            </div>
+          </li>
+          <li class="skill">
+            <span class="skill-num" aria-hidden="true">02</span>
+            <div>
+              <h3>Visual perception</h3>
+              <ul>
+                <li>Copy a design dot to dot, and rebuild black-and-white cube patterns (<b>Copy the Design</b>, <b>Pattern Cubes</b>).</li>
+                <li>Find where a row and a column meet, join edge-matching cards, and fit shapes into their holes (<b>Criss Cross</b>, <b>Finish the Pattern</b>, <b>Shape Buddies</b>).</li>
+                <li>Follow a caterpillar&rsquo;s colors in order without lifting a finger (<b>Caterpillar Munch</b>).</li>
+              </ul>
+            </div>
+          </li>
+          <li class="skill">
+            <span class="skill-num" aria-hidden="true">03</span>
+            <div>
+              <h3>Coordination and motor planning</h3>
+              <ul>
+                <li>Trace two mirror-image butterfly wings at once, one hand on each (<b>Butterfly Wings</b>).</li>
+                <li>Race a friendly ghost around a giant figure eight to practice crossing the midline (<b>Magic Loop Racing</b>).</li>
+                <li>Tip the iPad in both hands to roll a ladybug home through a garden maze (<b>Tilt Maze</b>).</li>
+                <li>Follow a hopping frog with your eyes and tap it to clear the pond (<b>Frog Pop</b>).</li>
+              </ul>
+            </div>
+          </li>
+          <li class="skill">
+            <span class="skill-num" aria-hidden="true">04</span>
+            <div>
+              <h3>Fine motor</h3>
+              <ul>
+                <li>Pinch bugs between two fingers to build the pincer grasp behind holding a pencil (<b>Pinch Pop</b>).</li>
+                <li>Pop letter bubbles in A-to-Z order with one pointing finger (<b>Bubble Train</b>).</li>
+              </ul>
+            </div>
+          </li>
+          <li class="skill">
+            <span class="skill-num" aria-hidden="true">05</span>
+            <div>
+              <h3>Following directions</h3>
+              <ul>
+                <li>Read position clues and place pictures so every clue is true (<b>Clue Crew</b>).</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-    <p class="home-contact">Questions? Email us at
-    <a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a>.</p>
-  </main>
-  <footer class="site-footer">
-    <div class="wrap">
-      <div class="footer-brand">
-        <img src="/images/app-icon.webp" alt="" width="48" height="48">
+    <section class="section" aria-labelledby="quests-title">
+      <div class="wrap quests">
+        <img src="/images/quests-sticker-240.webp" srcset="/images/quests-sticker-240.webp 240w, /images/quests-sticker-480.webp 480w" sizes="8rem"
+             width="240" height="240" alt="" loading="lazy">
         <div>
-          <strong>Magic OT Bug Adventures LLC</strong>
-          <p>139 Dudley Drive, Bergenfield, NJ 07621, United States</p>
-          <p><a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a></p>
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Beyond the games</p>
+          <h2 id="quests-title">Magic Quests</h2>
+          <p>Illustrated card adventures about everyday routines: getting ready for school, waking up and washing up, and a trip to town.</p>
         </div>
       </div>
-      <div>
-        <ul class="footer-links">
+    </section>
+
+    <section class="section" aria-labelledby="feel-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Made to feel good</p>
+          <h2 id="feel-title">Encouraging from the very first tap</h2>
+        </header>
+        <ol class="notes">
+          <li>
+            <h3>Spoken directions</h3>
+            <p>Each game shows its first move right on the board, and a gold &ldquo;?&rdquo; shows it again whenever it&rsquo;s needed.</p>
+          </li>
+          <li>
+            <h3>Stickers to make pictures with</h3>
+            <p>Finished levels earn stickers for the Magic Sticker Book, where children make pictures of their own.</p>
+          </li>
+          <li>
+            <h3>Writing lines from your classroom</h3>
+            <p>Writing lines called &ldquo;Tall &middot; Small &middot; Fall&rdquo; or &ldquo;Cloud &middot; Flower &middot; Ant&rdquo;, to match your child&rsquo;s classroom.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="grownups-title">
+      <div class="wrap">
+        <header class="section-head">
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>For grown-ups</p>
+          <h2 id="grownups-title">For parents, therapists and teachers</h2>
+        </header>
+        <div class="columns">
+          <article>
+            <h3>The Grown-Up Portal</h3>
+            <p>Behind a grown-ups-only check, the Grown-Up Portal shows what your child made and played this week, and their handwriting samples side by side over time. Add your own spelling words to the games that use them, and try any game yourself first without it counting toward your child&rsquo;s progress.</p>
+          </article>
+          <article>
+            <h3>2 Players and more children</h3>
+            <p>With Magic Circle, two children can share the iPad and take turns on the same level, each finish saved to that child&rsquo;s own record. Add more than one child to the iPad, and each keeps their own progress, stickers and handwriting samples.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="privacy-band" aria-labelledby="privacy-title">
+      <div class="wrap privacy-inner">
+        <p class="kicker kicker--light"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Privacy</p>
+        <h2 id="privacy-title">No ads. No tracking. No&nbsp;data&nbsp;collected.</h2>
+        <p>Everything your child does stays on this iPad: no accounts, no chat, no third-party analytics. Purchases, links and sharing sit behind the grown-ups-only check, and Settings can erase all child data at any time.</p>
+        <p><a class="text-link" href="/privacy">Read the Privacy Policy <svg class="icon icon--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+      </div>
+    </section>
+
+    <section class="section membership" aria-labelledby="membership-title">
+      <div class="wrap membership-grid">
+        <div>
+          <p class="kicker"><span class="dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>Membership</p>
+          <h2 id="membership-title">Free to download. Magic Circle unlocks it&nbsp;all.</h2>
+        </div>
+        <div>
+          <p>The Magic OT Bug is free to download. Magic Circle, monthly or yearly, unlocks all games and Magic Quests, 2 Players, more than one child on the iPad, and the week at a glance and handwriting over time in the Grown-Up Portal.</p>
+          <p>It starts with a 14-day free trial and supports Family Sharing. Free trials are for eligible new subscribers: one per Apple Account.</p>
+          <p class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</p>
+          <p class="membership-help">Questions about the trial, subscriptions or your child&rsquo;s data?
+          <a href="/support">Visit Support</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <p class="footer-name">Magic OT Bug Adventures LLC</p>
+        <p>Made with care by Sara &amp; Rebecca, pediatric OTs.</p>
+      </div>
+      <address class="footer-contact">
+        <span>139 Dudley Drive, Bergenfield, NJ 07621, United States</span>
+        <span>Phone: <a href="tel:+12013177937">(201) 317-7937</a></span>
+        <span><a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a></span>
+      </address>
+      <nav class="footer-nav" aria-label="Footer">
+        <ul>
+          <li><a href="/support">Support</a></li>
           <li><a href="/privacy">Privacy Policy</a></li>
           <li><a href="/terms">Terms of Use</a></li>
-          <li><a href="/support">Support</a></li>
         </ul>
-        <p>&copy; 2026 Magic OT Bug Adventures LLC</p>
-      </div>
+      </nav>
+    </div>
+    <div class="wrap footer-base">
+      <p>&copy; 2026 Magic OT Bug Adventures LLC</p>
+      <p>The Magic OT Bug for iPad is coming soon to the App Store.</p>
     </div>
   </footer>
 </body>
