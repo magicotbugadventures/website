@@ -44,30 +44,6 @@
           <p class="meta">Quick answers for parents, caregivers and therapists.</p>
         </div>
       </header>
-      <section class="contact-panel" id="contact" aria-labelledby="contact-title">
-        <img src="/images/ladybug-160.webp" srcset="/images/ladybug-160.webp 160w, /images/ladybug-320.webp 320w" sizes="5.5rem"
-             width="160" height="184" alt="">
-        <div class="contact-intro">
-          <h2 id="contact-title">Contact us</h2>
-          <p>We read every message and reply as soon as we can.</p>
-        </div>
-        <dl class="contact-list">
-          <div>
-            <dt>Email</dt>
-            <!-- The support email: the ONE place it appears on this page. Change it here. -->
-            <dd><a href="mailto:support@magicotbugadventures.com">support@<wbr>magicotbugadventures.com</a></dd>
-          </div>
-          <div>
-            <dt>Phone</dt>
-            <dd><a href="tel:+12013177937">(201) 317-7937</a></dd>
-          </div>
-          <div>
-            <dt>Mail</dt>
-            <dd>Magic OT Bug Adventures LLC<br>139 Dudley Drive<br>Bergenfield, NJ 07621, US</dd>
-          </div>
-        </dl>
-        <p class="contact-tip">It helps to tell us your iPad model, its iPadOS version and the app version (shown at the bottom of Grown-Up Portal &rarr; Settings). Please do not include your child&rsquo;s personal information.</p>
-      </section>
       <div class="doc-layout">
         <aside class="doc-aside">
           <nav class="toc" aria-label="Help topics">
@@ -83,6 +59,7 @@
             <li><a href="#offline">Offline play</a></li>
             <li><a href="#refunds">Refunds</a></li>
             <li><a href="#organizations">Clinics and schools</a></li>
+            <li><a href="#contact">Contact us</a></li>
             </ol>
           </nav>
         </aside>
@@ -141,19 +118,28 @@
           </section>
         </div>
       </div>
+      <section class="contact-panel" id="contact" aria-labelledby="contact-title">
+        <img src="/images/ladybug-160.webp" srcset="/images/ladybug-160.webp 160w, /images/ladybug-320.webp 320w" sizes="5.5rem"
+             width="160" height="184" alt="" loading="lazy">
+        <div class="contact-intro">
+          <h2 id="contact-title">Contact us</h2>
+          <p>We read every message and reply as soon as we can.</p>
+        </div>
+        <p class="contact-email">
+          <!-- The support email: the ONE place it appears in this page's content. Change it here. -->
+          <a href="mailto:support@magicotbugadventures.com">support@<wbr>magicotbugadventures.com</a>
+        </p>
+        <p class="contact-tip">It helps to tell us your iPad model, its iPadOS version and the app version (shown at the bottom of Grown-Up Portal &rarr; Settings). Please do not include your child&rsquo;s personal information.</p>
+      </section>
     </div>
   </main>
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div class="footer-brand">
         <p class="footer-name">Magic OT Bug Adventures LLC</p>
-        <p>Made with care by Sara &amp; Rebecca, pediatric OTs.</p>
+        <p>Designed by pediatric occupational therapists Sara and Rebecca, and built by developer Daniel Bashary.</p>
+        <p class="footer-contact"><a href="mailto:support@magicotbugadventures.com">support@magicotbugadventures.com</a></p>
       </div>
-      <address class="footer-contact">
-        <span>139 Dudley Drive, Bergenfield, NJ 07621, United States</span>
-        <span>Phone: <a href="tel:+12013177937">(201) 317-7937</a></span>
-        <span><a href="mailto:info@magicotbugadventures.com">info@magicotbugadventures.com</a></span>
-      </address>
       <nav class="footer-nav" aria-label="Footer">
         <ul>
           <li><a href="/support">Support</a></li>
@@ -161,10 +147,13 @@
           <li><a href="/terms">Terms of Use</a></li>
         </ul>
       </nav>
+      <div class="footer-store">
+          <!-- App Store line: the one place on this page. Before launch, swap this element for: <p class="soon"><span class="soon-dot" aria-hidden="true"></span>Coming soon to the App Store</p> -->
+          <a class="store-link store-link--quiet" href="https://apps.apple.com/app/id6813398286">Available on the App Store<svg class="icon icon--inline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      </div>
     </div>
     <div class="wrap footer-base">
       <p>&copy; 2026 Magic OT Bug Adventures LLC</p>
-      <p>The Magic OT Bug for iPad is coming soon to the App Store.</p>
     </div>
   </footer>
 </body>
